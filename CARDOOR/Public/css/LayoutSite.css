@@ -1,0 +1,372 @@
+﻿*{
+    font-family:'Times New Roman','Arial';
+        
+}
+.card-body {
+    width: 1345px;
+    min-height: 2000px;
+   
+    margin: 0 auto;
+}   
+.topbar {
+    color: white;
+    height: 30px;
+    padding-top: 2px;
+    background-color: #102d4b;
+}
+.header {
+    background-color: #160b38;
+    color: white;
+    font-size:30px;
+    height:80px;
+    padding-top:18px;
+   
+}
+.nav >li>a{
+    color: white;
+}
+.nav > li {
+    float: left;
+    margin-right: 15px;
+}
+    .nav > li > a:hover {
+       
+       
+        font-size: 30px;
+        text-decoration: none;
+        color: #f2c531;
+    }
+
+.nav li {
+    position: relative;
+    list-style: none;
+  
+}
+
+    .nav li a:hover {
+     
+        text-decoration: none;
+        color: #f2c531;
+    }
+    .nav li a {
+        color: white;
+     
+        line-height: 20px;
+        display: inline-block;
+    }
+        .nav .sub-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background-color: #eee;
+    padding: 5px 20px;
+    
+}
+
+.nav li:hover > .sub-menu {
+    display: block;
+    background-color: #102d4b;
+}
+
+.nav > li > .sub-menu {
+    top: 40px;
+    left: 0;
+    background-color: #102d4b;
+}
+.benner {
+    height: 600px;
+    background-image: url(../img/banner.jpg);
+    padding-top: 100px;
+    color: #f2c531;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.footer{
+    height:400px;
+    background-color:#293031;
+    color:white;
+    padding-top:100px;
+    padding-left:100px;
+    font-size:25px;
+}
+.menu1 a:hover {
+    color: #f2c531;
+    text-decoration: none;
+}
+.menu2 a:hover {
+    color: #f2c531;
+    text-decoration: none;
+}
+.menu1 a {
+    color: white;
+}
+.menu2 a{
+    color:white;
+}
+.bottom {
+    height: 50px;
+    background-color: #000000;
+    color:white;
+}
+    .bottom a:hover {
+        text-decoration: none;
+        color: #160b38;
+    }
+    .bottom a {
+        text-decoration: none;
+        color: #f2c531;
+    }
+@-webkit-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-moz-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-o-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+.test {
+   
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite;
+    -o-animation: my 700ms infinite;
+    animation: my 700ms infinite;
+}
+.content  {
+    margin-bottom: 60px;
+    margin-top: 100px;
+
+   
+}
+    .content .name a:hover {
+        text-decoration: none;
+        color: #f2c531;
+      
+    }
+    .content .name span {
+        float: right;
+        color: #f2c531;
+    }
+    .content .name .feature a {
+        border: 1px solid #808080;
+        color: #808080;
+        background-color: white;
+        padding: 4px 4px 4px 4px ;
+    }
+        .content .name .feature a:hover {
+            border: 1px solid;
+            background-color: #f2c531;
+            color: white;
+        }
+    .content .name input {
+        float: right;
+        margin-bottom:5px;
+    }
+        .content .name input:hover {
+            float: right;
+            margin-bottom: 5px;
+            background-color: #f2c531;
+            color:white;
+        }
+  
+div.stars {
+    width: 270px;
+    display: inline-block;
+}
+
+input.star {
+    display: none;
+}
+
+label.star {
+    float: right;
+    padding: 10px;
+    font-size: 15px;
+    color: #444;
+    transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+}
+
+input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input.star-1:checked ~ label.star:before {
+    color: #F62;
+}
+
+label.star:hover {
+    transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+}
+
+input.star-10:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input.star-6:checked ~ label.star:before {
+    color: #F62;
+}
+input.star-15:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input.star-11:checked ~ label.star:before {
+    color: #F62;
+}
+input.star-25:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input.star-21:checked ~ label.star:before {
+    color: #F62;
+}
+input.star-35:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input.star-31:checked ~ label.star:before {
+    color: #F62;
+}
+input.star-45:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+}
+
+input.star-41:checked ~ label.star:before {
+    color: #F62;
+}
+.save {
+    height: 600px;
+    background-image: url(../img/pricing-bg.jpg);
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+    .save h2 {
+        padding-top: 200px;
+        color: #f2c531;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .save p { 
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .save img {
+     padding-right:40px;
+      float:right;
+    }
+    .save .app-btns a {
+        border: 3px solid;
+        font-size: 30px;
+        padding: 10px 10px 10px 10px;
+        margin-right: 30px;
+        border-radius: 10px 10px 10px 10px;
+        border-color: #f2c531;
+        color: white;
+        text-decoration: none;
+    }
+        .save .app-btns a:hover {
+            border: 3px solid;
+            font-size: 30px;
+            padding: 10px 10px 10px 10px;
+            margin-right: 30px;
+            border-radius: 10px 10px 10px 10px;
+            border-color: #f2c531;
+            color: white;
+            text-decoration: none;
+            background-color: #f2c531;
+        }
+.trademark{
+    margin:0px 0px 100px 0px;
+}
+.trademark .col-sm-3 img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 20px 20px;
+}
+.ads {
+    background-image: url(../img/funfact-bg.jpg);
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:500px;
+}
+    .ads .col-md-4 {
+        padding-top: 150px;
+        color: white;
+        font-size: 50px;
+        color: #f2c531;
+    }
+    .ads .col-md-2 {
+        padding-left: 50px;
+        font-weight: bold;
+    }
+    .ads .col-md-12 text-center h3{
+        color: #f2c531;
+    }

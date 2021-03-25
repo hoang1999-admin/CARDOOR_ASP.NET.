@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html >
+<head>
+    <title>Cardoor - Hoàng Bắp</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="~/Public/img/favicon.ico" type="image/x-icon" />
+    <!--=== Bootstrap CSS ===-->
+    <link href="~/Public/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Public/css/LayoutSite.css" rel="stylesheet" />
+    <link href="~/Public/css/LayoutSite.css" rel="stylesheet" />
+    <!--===Fontawesome CSS===--> 
+    <link href="~/Public/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/Public/css/font-awesome.css" rel="stylesheet" />
+    @RenderSection("head", required: false)
+</head>
+<body class="card-body">
+    <section class="topbar ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 text-left">
+                    <i class="fas fa-map-marker-alt " style="color:#f2c531"></i> 114/67,Q.GV,TP.HCM.
+                </div>
+                <div class="col-lg-3 text-center">
+                    <i class="fas fa-mobile-alt" style="color:#f2c531"></i> (+84)865323066
+                </div>
+                <div class="col-lg-3 text-center">
+                    <i class="fa fa-clock" style="color:#f2c531"></i> Mon-Fri 08:00 - 17:00
+                </div>
+                <div class="col-lg-3 text-right">
+                    <div class="head-top">
+                        <a href="#"><i class="fab fa-behance" style="color:#f2c531; margin-right:5px;"></i> </a>
+                        <a href="#"><i class="fab fa-pinterest-p" style="color:#f2c531 ;margin-right:5px;"></i> </a>
+                        <a href="#"><i class="fab fa-facebook-f" style="color:#f2c531;margin-right:5px;"></i> </a>
+                        <a href="#"><i class="fab fa-linkedin-in" style="color:#f2c531;margin-right:5px;"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-2 ">
+                    <a href="#"><img src="~/Public/img/logo.png" /></a>
+                </div>
+
+                <div class="col-lg-10 " style="padding-left:300px; ">
+                    <ul class="nav">
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li>
+                            <a href="#">Dịch Vụ</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Phụ Tùng</a></li>
+                                <li>
+                                    <a href="#">Sửa Xe</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Thay Nhớt</a></li>
+                                        <li><a href="#">Tu Sửa</a></li>
+                                        <li><a href="#">Bảo Trì</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nâng Cấp</a></li>
+                                <li><a href="#">Hỗ Trợ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Xe Ôtô</a></li>
+                        <li><a href="#">Nhật Kí</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="benner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="book-a-car">
+                        <form action="index.html">
+                            <div class="pickup-location book-item">
+                                <h4>Chọn Địa Điểm:</h4>
+                                <select style="border-color:#f2c531" class="custom-select">
+                                    <option selected>Chọn</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">TP.HCM</option>
+                                    <option value="3">Đà Nẵng</option>
+                                    <option value="3">Vũng Tàu</option>
+                                </select>
+                            </div>
+                            <div class="pick-up-date">
+                                <h4>Ngày Đăng Ký:</h4>
+                                <input type="datetime-local" style="border-color:#f2c531" placeholder="Chọn Ngày Đăng ký" />
+
+                                <div class="return-car">
+                                    <h4>Ngày Trở Lại:</h4>
+                                    <input type="datetime-local" style="border-color:#f2c531" placeholder="Chọn Ngày Trở Lại" />
+                                </div>
+                            </div>
+                            <div class="choose-cars">
+                                <h4>Chọn Loại Xe:</h4>
+                                <select style="border-color:#f2c531" class="cars">
+                                    <option selected>Chọn</option>
+                                    <option value="1">BMW</option>
+                                    <option value="2">Audi</option>
+                                    <option value="3">Lexus</option>
+                                </select>
+                            </div>
+                            <div class="book-button text-center">
+                                <button style="border-color:#f2c531" class="book-now-btn">Book Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 text-right">
+                    <div class="display-table">
+                        <div class="display-table-cell">
+                            <div class="slider-right-text">
+                                <h1>Đặt Chiếc Xe Hôm Nay</h1>
+                                <p>Cho Ngày Hôm Nay Giảm 15% <br> Số Lượng Có Hạn!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ads">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <div class="col-md-2">
+                            <p><span class="counter">550</span>++</p>
+                            <h4>Khách Hàng Hài Lòng</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="col-md-2">
+                            <p><span class="counter">250</span>++</p>
+                            <h4>Mẫu Xe Đẹp</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="col-md-2">
+                            <p><span class="counter">50</span>++</p>
+                            <h4>Văn Phòng Thành Phố</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>CHỌN XE CỦA BẠN</h2>
+                        <span class="title-line"><i class="fa fa-car " style="color:#f2c531;font-size:30px;"></i></span>
+                        <p>Với chúng tôi bạn có thể an tâm và tin tưởng .</p><hr />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-2">
+                <div class="img-item">
+                    <img src="~/Public/img/car/car-1.jpg" alt="Hình 1" style="width:420px;" />
+                </div>
+                <div class="name">
+                    <h3>
+                        <a href="#">DODGE 1500 </a>
+                        <span class="price"><i class="fa fa-tag" style="color:red;"></i>985.000.000<sup>VND</sup></span>
+                    </h3>
+                    <div class="star-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sx-6">
+                                    <h5>HATCHBACK</h5>
+                                </div>
+                                <div class="col-sx-6">
+                                    <div class="stars">
+                                        <form action="">
+                                            <input class="star star-5" id="star-5" type="radio" name="star" />
+                                            <label class="star star-5" for="star-5"></label>
+                                            <input class="star star-4" id="star-4" type="radio" name="star" />
+                                            <label class="star star-4" for="star-4"></label>
+                                            <input class="star star-3" id="star-3" type="radio" name="star" />
+                                            <label class="star star-3" for="star-3"></label>
+                                            <input class="star star-2" id="star-2" type="radio" name="star" />
+                                            <label class="star star-2" for="star-2"></label>
+                                            <input class="star star-1" id="star-1" type="radio" name="star" />
+                                            <label class="star star-1" for="star-1"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <a href="#">2017</a>
+                        <a href="#">manual</a>
+                        <a href="#">AIR CONDITION</a>
+                        <input type="submit" value="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-2">
+                <div class="img-item">
+                    <img src="~/Public/img/car/car-2.jpg" alt="Hình 2" style="width:420px;" />
+                </div>
+                <div class="name">
+                    <h3>
+                        <a href="#">BMW </a>
+                        <span class="price"><i class="fa fa-tag" style="color:red;"></i>765.000.000<sup>VND</sup></span>
+                    </h3>
+                    <div class="star-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sx-6">
+                                    <h5>COUPE</h5>
+                                </div>
+                                <div class="col-sx-6">
+                                    <div class="stars">
+                                        <form action="">
+                                            <input class="star star-10" id="star-10" type="radio" name="star" />
+                                            <label class="star star-10" for="star-10"></label>
+                                            <input class="star star-9" id="star-9" type="radio" name="star" />
+                                            <label class="star star-9" for="star-9"></label>
+                                            <input class="star star-8" id="star-8" type="radio" name="star" />
+                                            <label class="star star-8" for="star-8"></label>
+                                            <input class="star star-7" id="star-7" type="radio" name="star" />
+                                            <label class="star star-7" for="star-7"></label>
+                                            <input class="star star-6" id="star-6" type="radio" name="star" />
+                                            <label class="star star-6" for="star-6"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <a href="#">2019</a>
+                        <a href="#">manual</a>
+                        <a href="#">AIR CONDITION</a>
+                        <input type="submit" value="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-2">
+                <div class="img-item">
+                    <img src="~/Public/img/car/car-3.jpg" alt="Hình 3" style="width:420px;" />
+                </div>
+                <div class="name">
+                    <h3>
+                        <a href="#">DODGE 1200</a>
+                        <span class="price"><i class="fa fa-tag" style="color:red;"></i>855.000.000<sup>VND</sup></span>
+                    </h3>
+                    <div class="star-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sx-6">
+                                    <h5>HATCHBACK</h5>
+                                </div>
+                                <div class="col-sx-6">
+                                    <div class="stars">
+                                        <form action="">
+                                            <input class="star star-15" id="star-15" type="radio" name="star" />
+                                            <label class="star star-15" for="star-15"></label>
+                                            <input class="star star-14" id="star-14" type="radio" name="star" />
+                                            <label class="star star-14" for="star-14"></label>
+                                            <input class="star star-13" id="star-13" type="radio" name="star" />
+                                            <label class="star star-13" for="star-13"></label>
+                                            <input class="star star-12" id="star-12" type="radio" name="star" />
+                                            <label class="star star-12" for="star-12"></label>
+                                            <input class="star star-11" id="star-11" type="radio" name="star" />
+                                            <label class="star star-11" for="star-11"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <a href="#">2016</a>
+                        <a href="#">manual</a>
+                        <a href="#">AIR CONDITION</a>
+                        <input type="submit" value="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-2">
+                <div class="img-item">
+                    <img src="~/Public/img/car/car-4.jpg" alt="Hình 4" style="width:420px;" />
+                </div>
+                <div class="name">
+                    <h3>
+                        <a href="#">BMW ES</a>
+                        <span class="price"><i class="fa fa-tag" style="color:red;"></i>955.000.000<sup>VND</sup></span>
+                    </h3>
+                    <div class="star-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sx-6">
+                                    <h5>CONVERTIBE</h5>
+                                </div>
+                                <div class="col-sx-6">
+                                    <div class="stars">
+                                        <form action="">
+                                            <input class="star star-25" id="star-25" type="radio" name="star" />
+                                            <label class="star star-25" for="star-25"></label>
+                                            <input class="star star-24" id="star-24" type="radio" name="star" />
+                                            <label class="star star-24" for="star-24"></label>
+                                            <input class="star star-23" id="star-23" type="radio" name="star" />
+                                            <label class="star star-23" for="star-23"></label>
+                                            <input class="star star-22" id="star-22" type="radio" name="star" />
+                                            <label class="star star-22" for="star-22"></label>
+                                            <input class="star star-21" id="star-21" type="radio" name="star" />
+                                            <label class="star star-21" for="star-21"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <a href="#">2015</a>
+                        <a href="#">manual</a>
+                        <a href="#">AIR CONDITION</a>
+                        <input type="submit" value="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-2">
+                <div class="img-item">
+                    <img src="~/Public/img/car/car-5.jpg" alt="Hình 5" style="width:420px;" />
+                </div>
+                <div class="name">
+                    <h3>
+                        <a href="#">AUDI</a>
+                        <span class="price"><i class="fa fa-tag" style="color:red;"></i>1.955.000.000<sup>VND</sup></span>
+                    </h3>
+                    <div class="star-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sx-6">
+                                    <h5>HATCHBACK</h5>
+                                </div>
+                                <div class="col-sx-6">
+                                    <div class="stars">
+                                        <form action="">
+                                            <input class="star star-35" id="star-35" type="radio" name="star" />
+                                            <label class="star star-35" for="star-35"></label>
+                                            <input class="star star-34" id="star-34" type="radio" name="star" />
+                                            <label class="star star-34" for="star-34"></label>
+                                            <input class="star star-33" id="star-33" type="radio" name="star" />
+                                            <label class="star star-33" for="star-33"></label>
+                                            <input class="star star-32" id="star-32" type="radio" name="star" />
+                                            <label class="star star-32" for="star-32"></label>
+                                            <input class="star star-31" id="star-31" type="radio" name="star" />
+                                            <label class="star star-31" for="star-31"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <a href="#">2017</a>
+                        <a href="#">manual</a>
+                        <a href="#">AIR CONDITION</a>
+                        <input type="submit" value="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-2">
+                <div class="img-item">
+                    <img src="~/Public/img/car/car-6.jpg" alt="Hình 6" style="width:420px;" />
+                </div>
+                <div class="name">
+                    <h3>
+                        <a href="#">MERCEDES</a>
+                        <span class="price"><i class="fa fa-tag" style="color:red;"></i>635.000.000<sup>VND</sup></span>
+                    </h3>
+                    <div class="star-item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sx-6">
+                                    <h5>COUPE</h5>
+                                </div>
+                                <div class="col-sx-6">
+                                    <div class="stars">
+                                        <form action="">
+                                            <input class="star star-45" id="star-45" type="radio" name="star" />
+                                            <label class="star star-45" for="star-45"></label>
+                                            <input class="star star-44" id="star-44" type="radio" name="star" />
+                                            <label class="star star-44" for="star-44"></label>
+                                            <input class="star star-43" id="star-43" type="radio" name="star" />
+                                            <label class="star star-43" for="star-43"></label>
+                                            <input class="star star-42" id="star-42" type="radio" name="star" />
+                                            <label class="star star-42" for="star-42"></label>
+                                            <input class="star star-41" id="star-41" type="radio" name="star" />
+                                            <label class="star star-41" for="star-41"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <a href="#">2018</a>
+                        <a href="#">manual</a>
+                        <a href="#">AIR CONDITION</a>
+                        <input type="submit" value="Đặt Hàng" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        @RenderBody();
+    </section>
+    <section class="quanlity">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3> CHẤT LƯỢNG TỐT CHO KHÁCH HÀNG</h3>
+                    <span class="title-line"><i class="fa fa-car " style="color:#f2c531;font-size:30px;"></i></span>
+                    <p>	Sang trọng hơn, thoải mái hơn.</p><hr />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="save">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">    
+                        <h2>GIẢM GIÁ 30% VỚI TẢI ỨNG DỤNG</h2>
+                        <p>Đơn Giản &amp; Nhanh Gọn - Đặt Xe Trong Vòng 60s.</p>
+                        <div class="app-btns">
+                            <a href="#"><i class="fab fa-android"></i> Android</a>
+                            <a href="#"><i class="fab fa-apple"></i> Apple</a>
+                        </div>      
+                </div>
+                <div class="col-lg-6">
+                   <img src="~/Public/img/mobile-app.png"  alt="hình phone"/>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="trademark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3> HÃNG XE LỚN, TỐT CHO KHÁCH HÀNG</h3>
+                    <span class="title-line"><i class="fa fa-car " style="color:#f2c531;font-size:30px;"></i></span>
+                    <p>	“ Mãnh Liệt Tinh Thần Việt Nam ”</p><hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/mercedes.png" alt=" mercedes" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/honda.png" alt="honda" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/bmw.png" alt="bmw" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/yamaha.png" alt="yamaha" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/suzuki.png" alt="suzuki" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/lexus.png" alt="lexus" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/toyota.png" alt="toyota" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="~/Public/img/mark/audi.png" alt="audi" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    Chúng Tôi<br /><br />
+                    <div> <img src="~/Public/img/logo.png" /></div>
+                    <p>Tầm nhìn của bạn, tương lai của chúng ta.</p>
+                    <div class="search">
+                        <form action="index.html">
+                            <input type="email" placeholder="Nhập email...." style="width:250px;">
+                            <button type="submit" class="newsletter-btn"><i class="far fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    Linh Kiện<br /><br />
+                    <div class="menu1">
+                        <a href="#"><p>Nội Thất</p></a>
+                        <a href="#"><p>Ngoại Thất</p></a>
+                        <a href="#"><p>Tổng Hợp</p></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    Hỗ Trợ<br /><br />
+                    <div class="menu2">
+                        <a href="#"><p>  <i class="fas fa-map-marker-alt " style="color:#f2c531"></i> 114/67,Q.GV,TP.HCM.</p></a>
+                        <a href="#"><p>  <i class="fas fa-mobile-alt" style="color:#f2c531"></i> (+84)865323066</p></a>
+                        <a href="#"><p> <i class="fas fa-envelope-square" style="color:#f2c531"></i> ndh1999@gmail.com</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fas fa-heart" style="color:red;" aria-hidden="true"></i> by <a href="https://cardoor.com" target="_blank" class="test">Hoàng Bắp</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=======================Javascript============================-->
+    <script src="~/Public/scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Public/scripts/popper.min.js"></script>
+    <script src="~/Public/scripts/bootstrap.min.js"></script>
+    <!-- fontawesome js-->
+    <script src="~/Public/js/fontawesome.js"></script>
+    <script src="~/Public/js/all.min.js"></script>
+</body>
+</html>
